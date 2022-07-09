@@ -38,19 +38,22 @@ void light_transform()
 
   digitalWrite(signal1[0],LOW);
   digitalWrite(signal1[1],LOW);
-  digitalWrite(signal2[1],LOW);
-  digitalWrite(signal2[2],LOW);
-
-  Serial.println("YELLOW ON SIGNAL 1 AND YELLOW ON SIGNAL 2");
   digitalWrite(signal1[2],LOW);
   digitalWrite(signal2[0],LOW);
+  digitalWrite(signal2[1],LOW);
+  digitalWrite(signal2[2],LOW);
+  
+
+  Serial.println("YELLOW ON SIGNAL 1 AND YELLOW ON SIGNAL 2");
   digitalWrite(signal1[1],HIGH);
   digitalWrite(signal2[1],HIGH);
   delay(1000);
 
-  digitalWrite(signal1[1],LOW);
-  digitalWrite(signal2[1],LOW);
   digitalWrite(signal1[0],LOW);
+  digitalWrite(signal1[1],LOW);
+  digitalWrite(signal1[2],LOW);
+  digitalWrite(signal2[0],LOW);
+  digitalWrite(signal2[1],LOW);
   digitalWrite(signal2[2],LOW);
 
   Serial.println("RED ON SIGNAL 1 AND GREEN ON SIGNAL 2");
@@ -59,22 +62,22 @@ void light_transform()
   delay(3000);
 
   digitalWrite(signal1[0],LOW);
-  digitalWrite(signal2[2],LOW);
   digitalWrite(signal1[1],LOW);
   digitalWrite(signal1[2],LOW);
   digitalWrite(signal2[0],LOW);
-  digitalWrite(signal2[1],LOW);  
+  digitalWrite(signal2[1],LOW);
+  digitalWrite(signal2[2],LOW);
   
   Serial.println("YELLOW ON SIGNAL 1 AND YELLOW ON SIGNAL 2");
-  digitalWrite(signal1[2],LOW);
-  digitalWrite(signal2[0],LOW);
   digitalWrite(signal1[1],HIGH);
   digitalWrite(signal2[1],HIGH);
   delay(1000);
 
+ digitalWrite(signal1[0],LOW);
   digitalWrite(signal1[1],LOW);
+  digitalWrite(signal1[2],LOW);
+  digitalWrite(signal2[0],LOW);
   digitalWrite(signal2[1],LOW);
-  digitalWrite(signal1[0],LOW);
   digitalWrite(signal2[2],LOW);
 }
   
